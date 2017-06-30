@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.androidprochatapplication.SignUpActivity">
+
+    <!--Sign Up Form-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Username Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_edtUsername"
+                android:hint="Ten Dang Nhap"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Password Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_edtPassword"
+                android:hint="Mat Khau"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Fullname Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/signup_edtFullname"
+                android:hint="Ho Ten Day Du"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!--Cac Nut-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Button Signin-->
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/signup_btnSignUp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:text="Dang Ky"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/signup_btnCancel"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:text="Huy Bo"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

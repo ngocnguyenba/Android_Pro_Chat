@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.androidprochatapplication.MainActivity">
+
+    <ImageView
+        android:id="@+id/image_message"
+        android:src="@drawable/ic_message"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <!--Form Dang Nhap-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/image_message"
+        android:id="@+id/group_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Username Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/main_edtUsername"
+                android:hint="Ten Dang Nhap"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <!--Password Edittext-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/main_edtPassword"
+                android:hint="Mat Khau"
+                android:padding="5dp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <!--Cac Nut-->
+    <LinearLayout
+        android:layout_below="@+id/group_login"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--Button Signin-->
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/main_btnSignIn"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:text="Dang Nhap"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/main_btnSignUp"
+            android:background="@color/colorPrimaryDark"
+            android:textColor="@color/colorAccent"
+            android:text="Dang Ky"
+            android:layout_marginRight="5dp"
+            android:layout_width="0dp"
+            style="@style/Base.Widget.AppCompat.Button.Borderless"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
