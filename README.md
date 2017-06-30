@@ -1,4 +1,4 @@
-# Android_Pro_Chat
+# Android Pro Chat Application
 Android Chat Application by Quickblox 
 
 Follow this Tutorial by EDMT Dev
