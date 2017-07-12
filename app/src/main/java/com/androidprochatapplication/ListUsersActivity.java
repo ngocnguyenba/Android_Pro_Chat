@@ -15,13 +15,18 @@ import com.androidprochatapplication.Common.Common;
 import com.androidprochatapplication.Holder.QBUsersHolder;
 import com.quickblox.chat.QBChatService;
 import com.quickblox.chat.QBRestChatService;
+import com.quickblox.chat.QBSystemMessagesManager;
+import com.quickblox.chat.listeners.QBSystemMessageListener;
 import com.quickblox.chat.model.QBChatDialog;
+import com.quickblox.chat.model.QBChatMessage;
 import com.quickblox.chat.model.QBDialogType;
 import com.quickblox.chat.utils.DialogUtils;
 import com.quickblox.core.QBEntityCallback;
 import com.quickblox.core.exception.QBResponseException;
 import com.quickblox.users.QBUsers;
 import com.quickblox.users.model.QBUser;
+
+import org.jivesoftware.smack.SmackException;
 
 import java.util.ArrayList;
 
@@ -33,6 +38,7 @@ public class ListUsersActivity extends AppCompatActivity {
     QBChatDialog dialog;
     ProgressDialog mDialog;
     QBUser user;
+    QBSystemMessagesManager qbSystemMessagesManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,6 +117,18 @@ public class ListUsersActivity extends AppCompatActivity {
                     public void onSuccess(QBChatDialog qbChatDialog, Bundle bundle) {
                         mDialog.dismiss();
                         Toast.makeText(getBaseContext(), "Tao Chat Rieng Tu Thanh Cong !", Toast.LENGTH_SHORT).show();
+
+                        qbSystemMessagesManager = QBChatService.getInstance().getSystemMessagesManager();
+                        QBChatMessage qbChatMessage = new QBChatMessage();
+                        qbChatMessage.setBody(qbChatDialog.getDialogId());
+                        for (int i=0;i<qbChatDialog.getOccupants().size();i++){
+                            qbChatMessage.setRecipientId(qbChatDialog.getOccupants().get(i));
+                            try {
+                                qbSystemMessagesManager.sendSystemMessage(qbChatMessage);
+                            }catch (SmackException.NotConnectedException e){
+                                e.printStackTrace();
+                            }
+                        }
                         finish();
                     }
 

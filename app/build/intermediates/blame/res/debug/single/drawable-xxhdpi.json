@@ -1,11 +1,19 @@
 [
     {
+        "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_logout.png",
+        "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\src\\main\\res\\drawable-xxhdpi\\ic_logout.png"
+    },
+    {
         "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_smiley.png",
         "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\src\\main\\res\\drawable-xxhdpi\\ic_smiley.png"
     },
     {
         "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_add.png",
         "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\src\\main\\res\\drawable-xxhdpi\\ic_add.png"
+    },
+    {
+        "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_user.png",
+        "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\src\\main\\res\\drawable-xxhdpi\\ic_user.png"
     },
     {
         "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi\\ic_message.png",

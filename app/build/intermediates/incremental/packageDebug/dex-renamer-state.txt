@@ -1,4 +1,7 @@
-#Fri Jun 30 16:27:51 ICT 2017
-base.0=C\:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
-renamed.0=classes.dex
-file.0=C\:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
+#Wed Jul 12 15:04:02 ICT 2017
+base.0=C\:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d83e820191c49dbd9dea739c035780093bf5f9e5
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_23a010b05a6d306ec3475d66e4b660e34a39b91a\\classes.dex
+base.1=C\:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_23a010b05a6d306ec3475d66e4b660e34a39b91a
+file.0=C\:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_d83e820191c49dbd9dea739c035780093bf5f9e5\\classes.dex

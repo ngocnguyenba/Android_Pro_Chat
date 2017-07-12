@@ -1,6 +1,7 @@
 package com.androidprochatapplication.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 
 import com.amulyakhare.textdrawable.TextDrawable;
 import com.amulyakhare.textdrawable.util.ColorGenerator;
+import com.androidprochatapplication.Holder.QBUnreadMessageHolder;
 import com.androidprochatapplication.R;
 import com.quickblox.chat.model.QBChatDialog;
 
@@ -55,11 +57,12 @@ public class ChatDialogsAdapter extends BaseAdapter {
             view = inflater.inflate(R.layout.list_chat_dialogs, null);
 
             TextView txtTitle, txtMessage;
-            ImageView imageView;
+            ImageView imageView, imageUnread;
 
             txtMessage = (TextView)view.findViewById(R.id.list_chat_dialog_message);
             txtTitle = (TextView)view.findViewById(R.id.list_chat_dialog_title);
             imageView = (ImageView)view.findViewById(R.id.image_chatDialog);
+            imageUnread = (ImageView)view.findViewById(R.id.image_unRead);
 
             txtMessage.setText(qbChatDialogs.get(position).getLastMessage());
             txtTitle.setText(qbChatDialogs.get(position).getName());
@@ -75,6 +78,16 @@ public class ChatDialogsAdapter extends BaseAdapter {
 //            Lay chu cai dau tien trong Dialog chat de tao avatar chat
             TextDrawable drawable = builder.build(txtTitle.getText().toString().substring(0, 1).toUpperCase(), randomColor);
             imageView.setImageDrawable(drawable);
+
+            TextDrawable.IBuilder unreadBuilder = TextDrawable.builder().beginConfig()
+                    .withBorder(4)
+                    .endConfig()
+                    .round();
+            int unread_count = QBUnreadMessageHolder.getInstance().getBundle().getInt(qbChatDialogs.get(position).getDialogId());
+            if (unread_count > 0){
+                TextDrawable unread_drawable = builder.build(""+unread_count, Color.RED);
+                imageUnread.setImageDrawable(unread_drawable);
+            }
         }
         return view;
     }

@@ -28,7 +28,7 @@
             app:arrowHeight="10dp"
             app:arrowLocation="left"
             app:arrowCenter="true"
-            app:bubbleColor="#333639"
+            app:bubbleColor="@color/colorPrimary"
             android:layout_alignParentStart="true" />
 
     </RelativeLayout>

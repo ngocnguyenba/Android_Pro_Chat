@@ -33,6 +33,7 @@
         <activity android:name="com.androidprochatapplication.ChatDialogsActivity" />
         <activity android:name="com.androidprochatapplication.ListUsersActivity" />
         <activity android:name="com.androidprochatapplication.ChatMessageActivity" />
+        <activity android:name="com.androidprochatapplication.UserProfile" />
     </application>
 
 </manifest>

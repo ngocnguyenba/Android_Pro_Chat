@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:2:1-26:12
 	package
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:3:5-44
 		INJECTED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml
@@ -14,7 +14,7 @@ ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src
 		INJECTED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:5:5-23:19
+ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:5:5-24:19
 MERGED from [com.github.lguipeng:BubbleView:1.0.1] C:\Users\dell\.android\build-cache\1061b33e52a824bd17ef839459f1c1b8ea599a4f\output\AndroidManifest.xml:11:5-14:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\dell\.android\build-cache\42af29236a847dd7c4102461601ebb0a03ed8eb3\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\dell\.android\build-cache\bde7b15185cbd88fdd8ad88f36312dcf7f794a47\output\AndroidManifest.xml:29:5-20
@@ -68,9 +68,13 @@ ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src
 	android:name
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:21:19-52
 activity#com.androidprochatapplication.ChatMessageActivity
-ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:22:9-66
+ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:22:9-57
 	android:name
 		ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:22:19-54
+activity#com.androidprochatapplication.UserProfile
+ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:23:9-58
+	android:name
+		ADDED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml:23:19-46
 uses-sdk
 INJECTED from C:\Users\dell\AndroidStudioProjects\AndroidProChatApplication\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.github.lguipeng:BubbleView:1.0.1] C:\Users\dell\.android\build-cache\1061b33e52a824bd17ef839459f1c1b8ea599a4f\output\AndroidManifest.xml:7:5-9:41

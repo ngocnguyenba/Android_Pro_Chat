@@ -20,6 +20,10 @@
         "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\src\\main\\res\\layout\\list_chat_dialogs.xml"
     },
     {
+        "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_user_profile.xml",
+        "source": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\src\\main\\res\\layout\\activity_user_profile.xml"
+    },
+    {
         "merged": "C:\\Users\\dell\\AndroidStudioProjects\\AndroidProChatApplication\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_dialog_title_material.xml",
         "source": "C:\\Users\\dell\\.android\\build-cache\\72a8fdf585fe6cf853b0346da4de7014ddd91bd8\\output\\res\\layout\\abc_dialog_title_material.xml"
     },
